@@ -1,19 +1,52 @@
-header {
-    height: 45em;
-    background-image: url(/imagenes/background_store.jpg);
-    background-size: cover;
-    position: relative;
-    margin-bottom: 4em;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Rubik&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+  
 }
 
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+    
+}
+
+.hero h1 {
+    padding: 0;
+    margin: 0;
+}
+
+nav .brand-logo {
+    position: relative;
+}
+
+.valign-wrapper {
+    flex-wrap: wrap;
+}
+
+.header-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero img, .about img, .featured-images img {
+    object-fit: cover;
+}
+
+.hero img {
+    height: 400px;
+    width: 200px;
+}
+
+.hero img:nth-child(odd) {
+    margin-top: 5rem;
 }
 
 p {

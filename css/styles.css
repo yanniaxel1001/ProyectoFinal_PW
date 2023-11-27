@@ -10,11 +10,6 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.mt-2 {
-    margin-top: 0.5rem;
-    
-}
-
 .hero h1 {
     padding: 0;
     margin: 0;
@@ -36,7 +31,7 @@ nav .brand-logo {
     z-index: 1;
 }
 
-.hero img, .about img, .featured-images img {
+.hero img, .featured-images img {
     object-fit: cover;
 }
 
@@ -59,4 +54,8 @@ section{
 
  h2 {
     margin-bottom: 1.5em; 
+ }
+
+ .featured-images img{
+    width: 100%;
  }

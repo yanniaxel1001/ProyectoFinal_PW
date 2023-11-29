@@ -2,8 +2,9 @@
 
     require("conexion_db.php");
     if (isset($_POST['btn-aceptar'])) {
-        $email = $_POST['email_usuario'];
-        mysqli_query($conexion, "DELETE FROM usuarios WHERE email_usuario = '$email'");
+
+        $c_confirmacion = $_POST['confirmacion'];
+        mysqli_query($conexion, "DELETE FROM usuarios WHERE password_usuario = '$c_confirmacion'");
         $_SESSION = [];
         session_unset();
         session_destroy();

@@ -1,11 +1,3 @@
-<?php
-
-    require("conexion_db.php");
-    if (!empty($_SESSION["id"])) {
-        header("Location: login_page.php");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +33,11 @@
                 </div>
                 <div class="center-align">
                     <br>
-                    <form action="">
-                    <button class="btn red" type="submit" name="btn-aceptar">Aceptar</button>
+                    <form action="delete_usr.php" method="POST">
+                        <input type="confirmacion" id="confirmacion" name="confirmacion" required placeholder="Ingresa tu contraseña">
+                        <div class="center-align">
+                        <button class="btn red" type="submit" name="btn-aceptar">Aceptar</button>
+                        </div>
                     </form>
                     <a href="user_logeado.php" class="btn">Cancelar</a>
                 </div>

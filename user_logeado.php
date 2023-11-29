@@ -49,7 +49,7 @@
                     <a href="logout.php" class="black-text">Cerrar Sesion</a>
                 </li>
                 <li>
-                    <a href="index.php" class="red">Eliminar Cuenta</a>
+                    <a href="delete_usr_page.php" class="red">Eliminar Cuenta</a>
                 </li>
             </ul>
         </nav>

@@ -1,4 +1,6 @@
 <?php
+
+    session_start();
     $host_db = "localhost:3306";
     $user_db = "root";
     $pass_db = "";

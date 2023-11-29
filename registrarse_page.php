@@ -66,10 +66,5 @@
         </div>
     </div>
 
-    <?php
-        include("registrar.php");
-
-    ?>
-
 </body>
 </html>

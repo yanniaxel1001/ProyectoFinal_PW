@@ -49,11 +49,6 @@
                         <br>
                         <a href="index.php">Cancelar</a>
                     </div>
-
-                    <?php
-                        include("login.php");
-
-                    ?>
                 </form>
             </div>
         </div>

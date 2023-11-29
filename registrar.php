@@ -26,6 +26,5 @@
             }
         }    
     }
-
     mysqli_close($conexion);
 ?>

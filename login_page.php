@@ -31,7 +31,7 @@
                 <div class="center-align">
                     <h6>Iniciar Sesion</h6>
                 </div>
-                <form action="registro_usuario.php" method="POST">
+                <form action="login.php" method="POST">
                     <label for="email_usuario">Email:</label>
                     <input type="email" id="email_usuario" name="email_usuario" required>
             
@@ -39,7 +39,7 @@
                     <input type="password" id="pass_usuario" name="pass_usuario" required>
                     
                     <div class="center-align">
-                        <button class="btn" type="submit">Aceptar</button>
+                        <button class="btn" type="submit" name="btn-aceptar">Aceptar</button>
                     </div>
                     <br>
                     <div class="center-align">
@@ -49,6 +49,11 @@
                         <br>
                         <a href="index.php">Cancelar</a>
                     </div>
+
+                    <?php
+                        include("login.php");
+
+                    ?>
                 </form>
             </div>
         </div>

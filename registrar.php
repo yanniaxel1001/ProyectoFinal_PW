@@ -12,9 +12,10 @@
 
         if (mysqli_num_rows($duplicate) > 0) {
             echo
-            "<script>
-                alert('El email ya ha sido tomado');
-            </script>";
+                '<script>
+                    alert("El email ya ha sido tomado");
+                    window.location = "registrarse_page.php";
+                </script>';
         }else {
             $consulta = "INSERT INTO usuarios VALUES ('', '$nombre', '$apellido', '$edad', '$email', '$pass')";
 

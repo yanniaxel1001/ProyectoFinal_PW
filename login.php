@@ -1,7 +1,7 @@
 <?php
 
     require("conexion_db.php");
-    if (isset($_POST['btn-guardar'])) {
+    if (isset($_POST['btn-aceptar'])) {
         
         $email = $_POST['email_usuario'];
         $pass = $_POST['pass_usuario'];
@@ -14,7 +14,7 @@
                 $_SESSION["id"] = $row["id"];
                 echo '
                     <script>
-                        alert("Usuario registrado exitosamente");
+                        alert("Usuario logeado exitosamente");
                         window.location = "user_logeado.php";
                     </script>';
             }else {

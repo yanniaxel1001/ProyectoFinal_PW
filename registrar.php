@@ -13,5 +13,5 @@
     mysqli_query($conexion, $consulta);
     mysqli_close($conexion);
 
-    header("location: /ProyectoFinal_PW/");
+    header("location: /ProyectoFinal_PW/user_logeado.php");
 ?>

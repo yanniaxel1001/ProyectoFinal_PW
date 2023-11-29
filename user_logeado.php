@@ -34,10 +34,10 @@
                     <a href="#" class="black-text">Experiences</a>
                 </li>
                 <li>
-                    <a href="registrarse_page.html" class="black-text">Registrate</a>
+                    <a href="index.php" class="black-text">Cerrar Sesion</a>
                 </li>
                 <li>
-                    <a href="login_page.html" class="black-text">Inicia Sesion</a>
+                    <a href="index.php" class="red">Eliminar Cuenta</a>
                 </li>
             </ul>
         </nav>

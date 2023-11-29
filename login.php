@@ -18,10 +18,14 @@
                         window.location = "user_logeado.php";
                     </script>';
             }else {
-                echo "<script> alert('Contrasena Equivocada');</script>";
+                echo "<script> alert('Contrasena Equivocada');
+                    window.location = 'login_page.php';
+                </script>";
             }
         }else {
-            echo "<script> alert('Usuario no registrado');</script>";
+            echo "<script> alert('Usuario no registrado');
+                window.location = 'login_page.php';
+            </script>";
         }
     }
-?>
+?>'

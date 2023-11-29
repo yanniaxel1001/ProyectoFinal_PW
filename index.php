@@ -1,3 +1,11 @@
+<?php
+
+    require("conexion_db.php");
+    if (!empty($_SESSION["id"])) {
+        header("Location: user_logeado.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

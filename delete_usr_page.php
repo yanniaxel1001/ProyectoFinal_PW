@@ -1,3 +1,15 @@
+<?php
+
+    require("conexion_db.php");
+    if (!empty($_SESSION["id"])) {
+        $id = $_SESSION["id"];
+        $resultado = mysqli_query($conexion, "SELECT * FROM usuarios WHERE id = $id");
+        $row = mysqli_fetch_assoc($resultado);
+    }else {
+        header("Location: login_page.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
